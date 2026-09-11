@@ -393,3 +393,14 @@ footer {
 @media (max-width: 480px) {
     .page-hero h1 { font-size: 32px; }
 }
+
+/* Large displays: the shell was pinned at 1180px, which on a 2560px monitor
+   leaves the page as a column adrift in empty space. Widen the shell; the
+   legal pages override .container to 800px at higher specificity, so their
+   prose keeps its own reading measure however wide the window gets. */
+@media (min-width: 1500px) {
+    .container { max-width: 1360px; }
+}
+@media (min-width: 2000px) {
+    .container { max-width: 1560px; }
+}
