@@ -73,7 +73,10 @@
         <h3>2.4 Distance Estimates and Maps</h3>
         <p>To place your stops on the map and calculate driving routes (Pro), the ZIP codes you enter are sent to Apple's mapping service. This request goes to Apple, not to us, and is governed by Apple's Privacy Policy.</p>
 
-        <h3>2.5 Your Location (optional)</h3>
+        <h3>2.5 Weather Alerts (optional, Pro)</h3>
+        <p>If Weather Alerts on Route is on, points along the calculated route (map coordinates only) are sent to the US National Weather Service (api.weather.gov) to look up official weather alerts. No personal information is included, and nothing is sent to us. You can turn this off in Settings → Appearance → Weather Alerts on Route.</p>
+
+        <h3>2.6 Your Location (optional)</h3>
         <p>If you tap "Show my distance to pickup" and allow location access, the App uses your device's approximate location to show the empty miles from your truck to the pickup. Your location is used only on your device and in the directions request to Apple; it is <strong>never sent to us, stored, or included in usage statistics</strong>. You can turn it off with "I'm dispatching this load", or remove access any time in iOS Settings → Privacy &amp; Security → Location Services.</p>
 
         <h2>3. How We Use Information</h2>
@@ -97,6 +100,7 @@
             <li><strong>Apple iCloud</strong> — to sync your data between your own devices when iCloud Sync is on</li>
             <li><strong>Apple Maps</strong> — to place ZIP codes on the map and calculate routes, including the optional drive from your location to the pickup</li>
             <li><strong>Apple App Analytics</strong> — for anonymized, aggregate usage statistics</li>
+            <li><strong>US National Weather Service</strong> — official weather alerts along a route, when Weather Alerts on Route is on</li>
             <li><strong>Supabase</strong> — hosts our anonymous usage statistics on our behalf (see section 2.3). It does not use the data for its own purposes.</li>
         </ul>
         <p>Apple's services are governed by Apple's own privacy policies. We encourage you to review <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a> for details on how Apple handles your data.</p>
