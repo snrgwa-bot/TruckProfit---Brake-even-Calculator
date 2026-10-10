@@ -32,7 +32,7 @@ body{
 }
 h1,h2,h3,h4,.brand,.btn{font-family:'Outfit','Inter',sans-serif;letter-spacing:-0.02em}
 a{color:inherit}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 .container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
 
 /* ── Nav ─────────────────────────────────────────── */
@@ -89,7 +89,7 @@ img{max-width:100%;display:block}
 .btn svg{width:19px;height:19px;flex:none}
 
 /* ── Sections ────────────────────────────────────── */
-section{position:relative;padding:110px 0}
+section{position:relative;padding:110px 0;scroll-margin-top:88px}
 .eyebrow{
   display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.14em;
   text-transform:uppercase;color:var(--accent);margin-bottom:14px;

@@ -72,9 +72,9 @@
 
 /* ── Scrollytelling ─────────────────────── */
 .story .container{display:grid;grid-template-columns:.82fr 1fr;gap:64px;align-items:start}
-.story-stage{position:sticky;top:96px;height:min(76vh,620px);display:grid;place-items:center}
+.story-stage{position:sticky;top:96px;height:min(74vh,580px);display:grid;place-items:center;overflow:hidden}
 .story-stage .phone{max-width:272px}
-.story-stage .phone img{height:min(60vh,500px);object-fit:cover;object-position:top}
+.story-stage .phone img{height:min(56vh,440px);object-fit:cover;object-position:top}
 .story-shot{position:absolute;opacity:0;transform:scale(.96) translateY(14px);
   transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.3,1)}
 .story-shot.active{opacity:1;transform:none}
@@ -101,7 +101,7 @@
 /* ── Themes ─────────────────────────────── */
 .themes .container{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .themes-img{border-radius:26px;overflow:hidden;border:1px solid var(--line);
-  box-shadow:0 40px 90px rgba(0,0,0,.55)}
+  box-shadow:0 40px 90px rgba(0,0,0,.55);max-width:330px;margin:0 auto}
 @media(max-width:860px){.themes .container{grid-template-columns:1fr}}
 
 /* ── Feature pills ──────────────────────── */
@@ -153,12 +153,12 @@
 @media(min-width:1500px){
   .hero-sub{max-width:600px}
   .hero-visual .phone{max-width:320px}
-  .story-stage .phone{max-width:300px}
+  .story-stage .phone{max-width:286px}
 }
 @media(min-width:2000px){
   .hero-sub{max-width:660px}
   .hero-visual .phone{max-width:352px}
-  .story-stage .phone{max-width:320px}
+  .story-stage .phone{max-width:300px}
 }
 </style>
 </head>
