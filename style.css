@@ -186,3 +186,32 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;background:var(--bg)
    820px, so prose keeps its reading measure however wide the window gets. */
 @media(min-width:1500px){.container{max-width:1360px}}
 @media(min-width:2000px){.container{max-width:1560px}}
+
+/* ── How it works diagram ────────────────────────── */
+.how-fig{max-width:880px;margin:0 auto}
+.how-fig svg{display:block;width:100%;height:auto}
+.how-narrow{display:none!important;max-width:420px;margin:0 auto}
+@media(max-width:640px){.how-wide{display:none!important}.how-narrow{display:block!important}}
+.how-node{fill:var(--bg-soft);stroke:var(--line);stroke-width:1.2}
+.how-focal{fill:rgba(59,240,140,0.08);stroke:var(--accent);stroke-width:1.5}
+.how-pro{stroke-dasharray:5 4;stroke:rgba(255,255,255,0.22)}
+.how-name{font-family:'Outfit','Inter',sans-serif;font-weight:600;font-size:17px;fill:var(--text)}
+.how-name-a{fill:var(--accent)}
+.how-sub,.how-label,.how-eyebrow,.how-tag-t{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:11px;letter-spacing:.02em}
+.how-sub{fill:var(--text-2)}
+.how-eyebrow{fill:var(--text-3);font-weight:600;letter-spacing:.12em}
+.how-label{fill:var(--accent);font-weight:600}
+.how-mask{fill:var(--bg-deep)}
+.how-line{fill:none;stroke:var(--text-3);stroke-width:1.5}
+.how-line-a{stroke:var(--accent)}
+.how-dash{stroke-dasharray:5 4}
+.how-head{fill:var(--text-3)}
+.how-head-a{fill:var(--accent)}
+.how-tag{fill:var(--card-strong);stroke:var(--line)}
+.how-tag-t{fill:var(--text-2);font-weight:700}
+.how-rule{stroke:var(--line)}
+.how-legend{font-family:'Inter',sans-serif;font-size:13px;fill:var(--text-2)}
+.how-steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:880px;margin:48px auto 0}
+.how-steps li{color:var(--text-2);font-size:15px;border-top:1px solid var(--line);padding-top:16px}
+.how-steps b{display:block;color:var(--text);font-family:'Outfit',sans-serif;font-size:17px;margin-bottom:4px}
+@media(max-width:640px){.how-steps{grid-template-columns:1fr;gap:16px}}

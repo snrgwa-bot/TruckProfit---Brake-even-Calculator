@@ -169,6 +169,7 @@
     <a class="brand" href="index.html"><span class="brand-mark">T</span>TruckProfit</a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
     <div class="nav-links">
+      <a href="#how">How it works</a>
       <a href="#features">Features</a>
       <a href="#themes">Design</a>
       <a href="#pricing">Pricing</a>
@@ -190,7 +191,7 @@
         <a class="btn btn-primary" href="https://apps.apple.com/us/app/truckprofit/id6758944009">
           <svg viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
           Download on the App Store</a>
-        <a class="btn btn-ghost" href="#features">See how it works</a>
+        <a class="btn btn-ghost" href="#how">See how it works</a>
       </div>
       <div class="hero-stats reveal d4">
         <div class="s"><b data-count="2" data-suffix=" min">2 min</b><span>Setup, once</span></div>
@@ -219,6 +220,147 @@
       <div class="card reveal d1"><div class="card-icon">⛽</div><h3>Costs you forget</h3><p>Fuel, insurance, payments, maintenance, tires, permits, IFTA, tolls, per diem — the real number is higher than most drivers think.</p></div>
       <div class="card reveal d2"><div class="card-icon">🚫</div><h3>No baseline</h3><p>Without a break-even rate per mile, there's nothing to measure an offer against before you commit the week.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS (diagram) -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>Your costs in. A yes or no out.</h2>
+      <p>Set your costs once. TruckProfit turns them into the rate per mile your truck needs, then checks every load offer against it.</p>
+    </div>
+
+    <figure class="how-fig reveal d1">
+      <!-- Wide layout: tablets and desktop -->
+      <svg class="how-wide" viewBox="0 0 784 464" role="img" aria-labelledby="how-wide-title how-wide-desc">
+        <title id="how-wide-title">How TruckProfit judges a load</title>
+        <desc id="how-wide-desc">Fixed costs, running costs and pay and fees, divided by the loaded miles you can drive, give your break-even rate per mile; each load offer is compared with it to show profit and margin, and Pro saves the result to history and reports.</desc>
+        <defs>
+          <marker id="how-wide-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="how-head"/></marker>
+          <marker id="how-wide-arrow-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="how-head-a"/></marker>
+        </defs>
+
+        <text class="how-eyebrow" x="24" y="24">SET ONCE</text>
+        <text class="how-eyebrow" x="296" y="24">WORKED OUT FOR YOU</text>
+        <text class="how-eyebrow" x="560" y="24">EVERY LOAD</text>
+
+        <!-- connectors first, so they sit behind the boxes -->
+        <path class="how-line" d="M232 84H256Q264 84 264 92V190Q264 198 272 198H296" marker-end="url(#how-wide-arrow)"/>
+        <path class="how-line" d="M232 220H296" marker-end="url(#how-wide-arrow)"/>
+        <path class="how-line" d="M232 356H256Q264 356 264 348V250Q264 242 272 242H296" marker-end="url(#how-wide-arrow)"/>
+        <path class="how-line" d="M396 128V176" marker-end="url(#how-wide-arrow)"/>
+        <path class="how-line how-line-a" d="M496 220H560" marker-end="url(#how-wide-arrow-a)"/>
+        <rect class="how-mask" x="502" y="196" width="52" height="14"/>
+        <text class="how-label" x="528" y="207" text-anchor="middle">COMPARE</text>
+        <path class="how-line" d="M660 128V176" marker-end="url(#how-wide-arrow)"/>
+        <path class="how-line how-dash" d="M660 264V312" marker-end="url(#how-wide-arrow)"/>
+
+        <!-- inputs -->
+        <rect class="how-node" x="24" y="40" width="208" height="88" rx="10"/>
+        <text class="how-name" x="40" y="78">Fixed costs</text>
+        <text class="how-sub" x="40" y="102">PAYMENTS · INSURANCE</text>
+
+        <rect class="how-node" x="24" y="176" width="208" height="88" rx="10"/>
+        <text class="how-name" x="40" y="214">Running costs</text>
+        <text class="how-sub" x="40" y="238">FUEL · MAINTENANCE · IFTA</text>
+
+        <rect class="how-node" x="24" y="312" width="208" height="88" rx="10"/>
+        <text class="how-name" x="40" y="350">Pay &amp; fees</text>
+        <text class="how-sub" x="40" y="374">DRIVER PAY · FACTORING</text>
+
+        <rect class="how-node" x="296" y="40" width="200" height="88" rx="10"/>
+        <text class="how-name" x="312" y="78">Miles you can run</text>
+        <text class="how-sub" x="312" y="102">DRIVING PROFILE · HOS</text>
+
+        <!-- focal: break-even -->
+        <rect class="how-node how-focal" x="296" y="176" width="200" height="88" rx="10"/>
+        <text class="how-name how-name-a" x="312" y="214">Break-even rate</text>
+        <text class="how-sub" x="312" y="238">COSTS ÷ LOADED MILES</text>
+
+        <!-- per load -->
+        <rect class="how-node" x="560" y="40" width="200" height="88" rx="10"/>
+        <text class="how-name" x="576" y="78">Load offer</text>
+        <text class="how-sub" x="576" y="102">PAY · MILES · EMPTY MILES</text>
+
+        <rect class="how-node how-focal" x="560" y="176" width="200" height="88" rx="10"/>
+        <text class="how-name how-name-a" x="576" y="214">Profit or loss</text>
+        <text class="how-sub" x="576" y="238">MARGIN · RATE PER MILE</text>
+
+        <rect class="how-node how-pro" x="560" y="312" width="200" height="88" rx="10"/>
+        <text class="how-name" x="576" y="350">History &amp; reports</text>
+        <text class="how-sub" x="576" y="374">WEEKS · MONTHS · IFTA</text>
+        <rect class="how-tag" x="716" y="324" width="32" height="18" rx="2"/>
+        <text class="how-tag-t" x="732" y="337" text-anchor="middle">PRO</text>
+
+        <!-- legend strip -->
+        <line class="how-rule" x1="24" y1="424" x2="760" y2="424"/>
+        <rect class="how-node how-focal" x="24" y="440" width="14" height="14" rx="3"/>
+        <text class="how-legend" x="46" y="451">Your answer</text>
+        <path class="how-line how-dash" d="M150 447H182"/>
+        <text class="how-legend" x="190" y="451">Pro feature</text>
+      </svg>
+
+      <!-- Narrow layout: phones -->
+      <svg class="how-narrow" viewBox="0 0 360 652" role="img" aria-labelledby="how-narrow-title how-narrow-desc">
+        <title id="how-narrow-title">How TruckProfit judges a load</title>
+        <desc id="how-narrow-desc">Your monthly costs and the miles you can run give your break-even rate per mile; each load offer is compared with it to show profit and margin, and Pro saves the result to history and reports.</desc>
+        <defs>
+          <marker id="how-narrow-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="how-head"/></marker>
+          <marker id="how-narrow-arrow-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="how-head-a"/></marker>
+        </defs>
+
+        <text class="how-eyebrow" x="16" y="16">SET ONCE</text>
+        <text class="how-eyebrow" x="188" y="272">EVERY LOAD</text>
+
+        <path class="how-line" d="M94 104V152" marker-end="url(#how-narrow-arrow)"/>
+        <path class="how-line" d="M266 104V152" marker-end="url(#how-narrow-arrow)"/>
+        <path class="how-line how-line-a" d="M94 232V404" marker-end="url(#how-narrow-arrow-a)"/>
+        <rect class="how-mask" x="104" y="311" width="52" height="14"/>
+        <text class="how-label" x="106" y="322">COMPARE</text>
+        <path class="how-line" d="M266 356V404" marker-end="url(#how-narrow-arrow)"/>
+        <path class="how-line how-dash" d="M180 484V532" marker-end="url(#how-narrow-arrow)"/>
+
+        <rect class="how-node" x="16" y="28" width="156" height="76" rx="10"/>
+        <text class="how-name" x="94" y="62" text-anchor="middle">Monthly costs</text>
+        <text class="how-sub" x="94" y="84" text-anchor="middle">FIXED · FUEL · FEES</text>
+
+        <rect class="how-node" x="188" y="28" width="156" height="76" rx="10"/>
+        <text class="how-name" x="266" y="62" text-anchor="middle">Miles you run</text>
+        <text class="how-sub" x="266" y="84" text-anchor="middle">HOURS OF SERVICE</text>
+
+        <rect class="how-node how-focal" x="16" y="152" width="328" height="80" rx="10"/>
+        <text class="how-name how-name-a" x="180" y="186" text-anchor="middle">Break-even rate</text>
+        <text class="how-sub" x="180" y="210" text-anchor="middle">COSTS ÷ LOADED MILES</text>
+
+        <rect class="how-node" x="188" y="280" width="156" height="76" rx="10"/>
+        <text class="how-name" x="266" y="314" text-anchor="middle">Load offer</text>
+        <text class="how-sub" x="266" y="336" text-anchor="middle">PAY · MILES · STOPS</text>
+
+        <rect class="how-node how-focal" x="16" y="404" width="328" height="80" rx="10"/>
+        <text class="how-name how-name-a" x="180" y="438" text-anchor="middle">Profit or loss</text>
+        <text class="how-sub" x="180" y="462" text-anchor="middle">MARGIN · RATE PER MILE</text>
+
+        <rect class="how-node how-pro" x="16" y="532" width="328" height="72" rx="10"/>
+        <text class="how-name" x="180" y="564" text-anchor="middle">History &amp; reports</text>
+        <text class="how-sub" x="180" y="586" text-anchor="middle">WEEKS · MONTHS · IFTA</text>
+        <rect class="how-tag" x="300" y="544" width="32" height="18" rx="2"/>
+        <text class="how-tag-t" x="316" y="557" text-anchor="middle">PRO</text>
+
+        <line class="how-rule" x1="16" y1="620" x2="344" y2="620"/>
+        <rect class="how-node how-focal" x="16" y="632" width="14" height="14" rx="3"/>
+        <text class="how-legend" x="38" y="643">Your answer</text>
+        <path class="how-line how-dash" d="M150 639H182"/>
+        <text class="how-legend" x="190" y="643">Pro feature</text>
+      </svg>
+    </figure>
+
+    <ol class="how-steps">
+      <li class="reveal"><b>1. Enter your costs once.</b> Payments, insurance, fuel, maintenance, driver pay and fees.</li>
+      <li class="reveal d1"><b>2. Get your break-even.</b> Total monthly cost divided by the loaded miles you can drive.</li>
+      <li class="reveal d2"><b>3. Check every offer.</b> See profit, margin and rate per mile before you book the load.</li>
+    </ol>
   </div>
 </section>
 
